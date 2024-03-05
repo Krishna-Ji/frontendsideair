@@ -11,7 +11,7 @@ const Register = () => {
     async function registerUser(ev) {
         ev.preventDefault()
      try {
-        axios.post('http://localhost:3000/register', {
+        axios.post('https://back-airhoster-1.onrender.com/register', {
          name,
          email,
          password

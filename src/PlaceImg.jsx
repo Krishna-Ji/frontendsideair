@@ -9,7 +9,7 @@ const PlaceImg = ({place, index=0,className=null}) => {
         className = 'object-cover'
     }
   return (
-    <img className={className} src={'http://localhost:3000/uploads/' + place?.photos[index]} alt='place img' />
+    <img className={className} src={'https://back-airhoster-1.onrender.com/uploads/' + place?.photos[index]} alt='place img' />
   )
 }
 

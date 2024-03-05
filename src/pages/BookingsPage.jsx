@@ -10,14 +10,14 @@ const BookingsPage = () => {
   const [bookings, setBookings] = useState([]);
   const [Delete, setDelete] = useState('');
   useEffect(() => {
-    axios.get('http://localhost:3000/bookings').then((res) => {
+    axios.get('https://back-airhoster-1.onrender.com/bookings').then((res) => {
       setBookings(res.data);
       console.log(res.data);
     });
   }, [])
 
   function handleDelete(id) {
-    axios.delete('http://localhost:3000/bookings/' + id).then(() => {
+    axios.delete('https://back-airhoster-1.onrender.com/bookings/' + id).then(() => {
       setBookings(bookings.filter((booking) => booking._id !== id))
       
     })

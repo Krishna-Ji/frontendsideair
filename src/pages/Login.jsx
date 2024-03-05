@@ -12,7 +12,7 @@ const Login = () => {
     async function handleLoginSubmit(ev) {
         ev.preventDefault();
         try {
-           const {data} = await axios.post('http://localhost:3000/login', {email, password}, {withCredentials: true});
+           const {data} = await axios.post('https://back-airhoster-1.onrender.com/login', {email, password}, {withCredentials: true});
             setUser(data);
             alert('Login successful');
             setRedirect(true);

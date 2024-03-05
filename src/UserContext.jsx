@@ -10,7 +10,7 @@ export function UserContextProvider({ children }) {
 
     useEffect(  () => {
             if(!user) {
-                 fetch('http://localhost:3000/profile', {
+                 fetch('https://back-airhoster-1.onrender.com/profile', {
                         credentials: 'include',
                         
                     }).then((res) => res.json()).then((data) => 

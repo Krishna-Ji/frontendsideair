@@ -13,7 +13,7 @@ const PlacesGallery = ({place}) => {
                   </button>
               </div>
               {place.photos?.map((x, i) => (
-                  <img key={i} src={'http://localhost:3000/uploads/' + x} alt="" />
+                  <img key={i} src={'https://back-airhoster-1.onrender.com/uploads/' + x} alt="" />
               ))}
           </div>
         </div>
@@ -24,16 +24,16 @@ const PlacesGallery = ({place}) => {
         <div className=' grid gap-2 grid-cols-[2fr_1fr] rounded-3xl overflow-hidden'>
           <div>
             {place.photos?.[0] && (
-              <img src={'http://localhost:3000/uploads/' + place.photos[0]} alt="" className=' cursor-pointer object-cover aspect-square rounded-2xl' onClick={() => setShowAllPhotos(true)} />
+              <img src={'https://back-airhoster-1.onrender.com/uploads/' + place.photos[0]} alt="" className=' cursor-pointer object-cover aspect-square rounded-2xl' onClick={() => setShowAllPhotos(true)} />
             )}
           </div>
           <div className=' grid'>
             {place.photos?.[1] && (
-              <img src={'http://localhost:3000/uploads/' + place.photos[1]} alt="" className=' cursor-pointer object-cover aspect-square rounded-2xl' onClick={() => setShowAllPhotos(true)} />
+              <img src={'https://back-airhoster-1.onrender.com/uploads/' + place.photos[1]} alt="" className=' cursor-pointer object-cover aspect-square rounded-2xl' onClick={() => setShowAllPhotos(true)} />
             )}
             <div className=' overflow-hidden'>
               {place.photos?.[2] && (
-                <img src={'http://localhost:3000/uploads/' + place.photos[2]} alt="" className=' cursor-pointer object-cover aspect-square rounded-2xl' onClick={() => setShowAllPhotos(true)} />
+                <img src={'https://back-airhoster-1.onrender.com/uploads/' + place.photos[2]} alt="" className=' cursor-pointer object-cover aspect-square rounded-2xl' onClick={() => setShowAllPhotos(true)} />
               )}
             </div>
           </div>

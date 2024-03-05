@@ -9,7 +9,7 @@ const BookingPlace = () => {
   const [booking,setBooking] = useState(null);
   useEffect(() => {
     if (id) {
-      axios.get('http://localhost:3000/bookings/' + id + '/').then(response => {
+      axios.get('https://back-airhoster-1.onrender.com/bookings/' + id + '/').then(response => {
         const foundBooking = response.data;
         if (foundBooking) {
           setBooking(foundBooking);

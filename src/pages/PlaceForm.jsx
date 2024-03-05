@@ -27,7 +27,7 @@ const PlaceForm = () => {
       if(id !== 'new') {
         
       
-      axios.get('http://localhost:3000/places/' + id).then(({data}) => {
+      axios.get('https://back-airhoster-1.onrender.com/places/' + id).then(({data}) => {
         const {title, address,Price, photos, description, perks, extraInfo, checkIn, checkOut, maxGuests} = data;
         setTitle(title);
         setAddress(address);
@@ -58,7 +58,7 @@ const PlaceForm = () => {
     Price,
   };
 
-  await axios.post('http://localhost:3000/places', placedata);
+  await axios.post('https://back-airhoster-1.onrender.com/places', placedata);
   setRedirect('/account/places/')
   
   

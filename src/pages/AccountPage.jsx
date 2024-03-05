@@ -22,7 +22,7 @@ const AccountPage = () => {
 
 
    function logout() {
-     axios.post('http://localhost:3000/logout');
+     axios.post('https://back-airhoster-1.onrender.com//logout');
      setUser(null);
      setRedirect('/');
   }

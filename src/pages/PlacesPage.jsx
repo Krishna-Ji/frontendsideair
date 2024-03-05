@@ -26,7 +26,7 @@ const PlacesPage = () => {
         
         if(!id) return;
 
-       axios.get('http://localhost:3000/places/' + id).then((res) => {
+       axios.get('https://back-airhoster-1.onrender.com/places/' + id).then((res) => {
        console.log(res.data); 
        setPlaces(res.data);   
        })
@@ -47,7 +47,7 @@ const PlacesPage = () => {
             price: price,
         }
 
-        axios.post('http://localhost:3000/bookings', bookingData).then((res) => {
+        axios.post('https://back-airhoster-1.onrender.com/bookings', bookingData).then((res) => {
             alert('Booking successful!');
             const bookingId = res.data._id;
             setRedirect(`/account/bookings`);

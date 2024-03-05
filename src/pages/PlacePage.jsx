@@ -11,14 +11,14 @@ const PlacePage = () => {
   const [Delete, setDelete] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:3000/pluses').then(({data}) => {
+    axios.get('https://back-airhoster-1.onrender.com/pluses').then(({data}) => {
       console.log(data);
       setPlaces(data);
     });
   }, []);
 
   function handleDelete(id) {
-    axios.delete('http://localhost:3000/places/' + id).then(() => {
+    axios.delete('https://back-airhoster-1.onrender.com/places/' + id).then(() => {
       setPlaces(Places.filter((place) => place._id !== id))
       
       
