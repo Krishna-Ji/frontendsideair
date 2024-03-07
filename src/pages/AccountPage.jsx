@@ -76,7 +76,7 @@ const AccountPage = () => {
     }
 
     {
-      ((id) ? 
+      (id ? 
       <div>
         <PlaceForm/>
       </div>
